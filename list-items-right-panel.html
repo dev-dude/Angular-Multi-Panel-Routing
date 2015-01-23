@@ -1,0 +1,10 @@
+<div class="list-item-panel">
+    <div class="list-item-panel-header">List Items<span class="click-me" data-ng-click="clickMe()">CLICK ME</span> {{templateName}} {{pageNumber}} </div>
+    <div class="list-item-ul-list-container" data-ng-if="listItems.length > 0">
+        <ul>
+            <li data-ng-repeat="listItem in listItems">
+                <h1>{{listItem.date}} {{listItem.name}} {{count}} </h1>
+            </li>
+        </ul>
+    </div>
+</div>
